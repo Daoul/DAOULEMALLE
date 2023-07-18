@@ -1,17 +1,17 @@
-// function calcular()
-// function calcular(nro1, nro2){
-//     document.write("Sumar " + (nro1+nro2) + "<br/>");
-//     document.write("Restar " + (nro1-nro2) + "<br/>");
-//     document.write("Multiplicar " + (nro1*nro2) + "<br/>");
-//     document.write("Dividir " + (nro1/nro2) + "<br/>");
-//     document.write("<hr>");
+// // function calcular()
+function calcular(nro1, nro2){
+    document.write("Sumar " + (nro1+nro2) + "<br/>");
+    document.write("Restar " + (nro1-nro2) + "<br/>");
+    document.write("Multiplicar " + (nro1*nro2) + "<br/>");
+    document.write("Dividir " + (nro1/nro2) + "<br/>");
+    document.write("<hr>");
 
-// }
+}
 
-// // calcular();
-// // calcular();
-// // calcular();
-// // calcular();
+calcular();
+calcular();
+calcular();
+calcular();
 
 // // calcular(10, 12);
 // // calcular(5, 6);
