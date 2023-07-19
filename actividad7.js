@@ -1,15 +1,48 @@
-// function calcular actividad2
+function calcular(a, b){
+var a = parseInt(prompt("El primer número: " ));
+var b = Number(prompt("El segundo número: "));
+    console.log(a);
+    console.log(b);
 
-function calcular(nro1, nro2){
-    document.write("Sumar " + (nro1+nro2) + "<br/>");
-    document.write("Restar " + (nro1-nro2) + "<br/>");
-    document.write("Multiplicar " + (nro1*nro2) + "<br/>");
-    document.write("Dividir " + (nro1/nro2) + "<br/>");
-    document.write("<hr>");
+    console.log(a+b);
+    document.write(a+b + "<br/>");
+    document.write(a-b + "<br/>");
+    document.write(a*b + "<br/>");
+    document.write(a/b + "<br/>");
+}
+calcular();
 
-    calcular();
-    calcular();
-    calcular();
-    calcular();
+function comparar(a, b){
+    var a = parseInt(prompt("El primer número: " ));
+    var b = parseInt(prompt("El segundo número: "));
+    console.log("El primer número es: "  + a);
+    console.log("El segundo número es: "  + b);
+
+    if (a == b){
+        console.log("Son iguales" );
+    }
+    else  if (a > b) {
+            console.log("El primer número es major" );
+            
+            }
+            else {
+            console.log("El segundo número es major " );
+            }
 
 }
+comparar();
+
+function porcentaje(ninos, ninas){
+    var ninos = parseInt(prompt("El número de niños: " ));
+    var ninas = parseInt(prompt("El número de niñas: "));
+        console.log("Niños: "  + ninos);
+        console.log("Niñas: "  + ninas);
+    
+    var totalninos = ninos + ninas;
+    var porcentninos = (ninos*100)/totalninos
+    var porcentninas = (ninas*100)/totalninos
+    
+    console.log(" El porcentaje de de niños: " + porcentninos)
+    console.log(" El porcentaje de de niñss: " + porcentninas)
+}
+porcentaje();
