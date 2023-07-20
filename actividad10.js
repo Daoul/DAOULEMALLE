@@ -1,13 +1,13 @@
 var importe = parseInt(prompt("El importe de la compra: " ));
 var mes = (prompt("Introduce el mes: "));
-    console.log("El importe de la compra es: "  + importe + "€");
+    console.log("El importe de la compra es: "  + importe + " €");
     console.log("El mes es: "  + mes);
 var total = "";
 
 // enero y febrero un 20%.
 if( mes == "enero" || mes == "febrero" ){
 
-    document.write( "El total es " + total + " = " + (importe * 0.80) + "€" + "<br/>");
+    document.write( "El total es " + total + " = " + (importe * 0.80) + " €" + "<br/>");
 
     // total = importe * 0.80;
     // console.log( "El total es " + total );
@@ -19,7 +19,7 @@ if( mes == "enero" || mes == "febrero" ){
 else if ( mes == "julio" || mes == "agosto" ){
     // total = importe * 0.85;
     // console.log( "El total es " + total );
-    document.write( "El total es " + total + " = " + (importe * 0.85) + "€"+ "<br/>");
+    document.write( "El total es " + total + " = " + (importe * 0.85) + " €"+ "<br/>");
 
 }
 
@@ -27,7 +27,7 @@ else if ( mes == "julio" || mes == "agosto" ){
 else if ( mes == "noviembre" || mes == "diciembre" ){
 // total = importe * 0.75;
 // console.log(" El total es " + total );
-document.write( "El total es " + total + " = " + (importe * 0.75) + "€" + "<br/>");
+document.write( "El total es " + total + " = " + (importe * 0.75) + " €" + "<br/>");
 
 }
 
@@ -35,7 +35,7 @@ document.write( "El total es " + total + " = " + (importe * 0.75) + "€" + "<br
 else{
 // total = importe ;
 // console.log(" El total es " + total );
-document.write( "El total es " + importe + "€" );
+document.write( "El total es " + importe + " €" );
 
 }
 
