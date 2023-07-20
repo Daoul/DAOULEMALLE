@@ -1,6 +1,6 @@
-let operador = prompt("operadores");
-resultado = eval(operador);
-console.log(resultado);
+// let operador = prompt("operadores");
+// resultado = eval(operador);
+// console.log(resultado);
 
 
 function comprobar(){
