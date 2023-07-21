@@ -1,18 +1,18 @@
-var a = parseInt(prompt("El primer número: " ));
-var b = parseInt(prompt("El segundo número: "));
-    console.log("El primer número es: "  + a);
-    console.log("El segundo número es: "  + b);
+// var a = parseInt(prompt("El primer número: " ));
+// var b = parseInt(prompt("El segundo número: "));
+//     console.log("El primer número es: "  + a);
+//     console.log("El segundo número es: "  + b);
 
-    if (a == b){
-        console.log("Son iguales" );
-    }
-    else  if (a > b) {
-            console.log("El primer número es major" );
+//     if (a == b){
+//         console.log("Son iguales" );
+//     }
+//     else  if (a > b) {
+//             console.log("El primer número es major" );
             
-            }
-            else {
-            console.log("El segundo número es major " );
-            }
+//             }
+//             else {
+//             console.log("El segundo número es major " );
+//             }
 
   //Actividad3: Correction de Manuel
 
@@ -31,15 +31,30 @@ var b = parseInt(prompt("El segundo número: "));
 // }          
 
     
-// function calcular(){
+function comparar(){
 
-//     var num1 = Number(document.getElementById("numero1").value);
-//     var num2 = Number(document.getElementById("numero2").value);
-//     sumar = num1 + num2;
-    
-//     document.getElementById("sumar").innerHTML="Sumar: " + sumar;
-// }
+    var a = Number(document.getElementById("numero1").value);
+    var b = Number(document.getElementById("numero2").value);
+
+    if (a==b) {
+        comparado = "El primero y el segundo son iguales";
+        document.getElementById("comparado").innerHTML="comparado: " + comparado;
         
+    }else if (a>b){
+        comparado = "El primero es mayor";
+        document.getElementById("comparado").innerHTML="comparado: " + comparado;
+        
+    } else if (b>a){
+        comparado = "El segundo es mayor";
+        document.getElementById("comparado").innerHTML="comparado: " + comparado;
+        
+    }else{
+        comparado = "Algo pasa!!!";
+        document.getElementById("comparado").innerHTML="comparado: " + comparado;
+        
+    }          
+   
+}
 
     
     

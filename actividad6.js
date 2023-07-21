@@ -1,20 +1,3 @@
-// InicioProceso
-// .Pedir clave
-// .Si clave igual a 123456
-// .Dar acceso
-// .Sino
-// .Pedir clave
-// .No pedir más de tres veces la clave
-// .Mensaje "la clave es incorrecta"
-// .Finsi
-// .
-// .
-
-// FinProceso
-
-// var clave = parseInt(prompt("Introduce la clave: " ));
-    // console.log("La clave: "  + clave);
-
 // for ( var i=1; i<3; i++){
 //     if(clave == 123456){
 //     document.write(" Acceso ");
@@ -26,13 +9,31 @@
            
 //     }
 // }
-for(var i=0;i<3; i++){
-    var contraseña = prompt("Introduce la contraseña");
 
-    if(contraseña=="123456"){
-        document.write("Es correcto");
-        break;
+
+// Actividad6: Correction de Manuel
+// for(var i=0;i<3; i++){
+//     var contraseña = prompt("Introduce la contraseña");
+
+//     if(contraseña=="123456"){
+//         document.write("Es correcto");
+//         break;
+//     }
+// }
+// document.write("No es correcto");
+
+function identificar(){
+    for(var i=0;i<3; i++){
+        var contraseña = (document.getElementById("identif").value);
+    
+        if(contraseña=="123456"){
+            identificado = "Es correcto"
+            document.getElementById("identificado").innerHTML="identificado: " + identificado;
+            
+            break;
+        }
     }
+    identificado = "No es correcto"
+    document.getElementById("identificado").innerHTML="identificado: " + identificado;
 }
-document.write("No es correcto");
 
