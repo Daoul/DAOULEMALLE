@@ -33,9 +33,10 @@
     
 function comparar(){
 
-    var a = Number(document.getElementById("numero1").value);
-    var b = Number(document.getElementById("numero2").value);
-
+    var a = Number(document.getElementById("nbre1").value);
+    var b = Number(document.getElementById("nbre2").value);
+// console.log(a);
+// console.log(b);
     if (a==b) {
         comparado = "El primero y el segundo son iguales";
         document.getElementById("comparado").innerHTML="comparado: " + comparado;
@@ -44,15 +45,16 @@ function comparar(){
         comparado = "El primero es mayor";
         document.getElementById("comparado").innerHTML="comparado: " + comparado;
         
-    } else if (b>a){
+    } else{
         comparado = "El segundo es mayor";
         document.getElementById("comparado").innerHTML="comparado: " + comparado;
         
-    }else{
-        comparado = "Algo pasa!!!";
-        document.getElementById("comparado").innerHTML="comparado: " + comparado;
+    }
+    // else{
+    //     comparado = "Algo pasa!!!";
+    //     document.getElementById("comparado").innerHTML="comparado: " + comparado;
         
-    }          
+    // }          
    
 }
 

@@ -36,6 +36,6 @@ function porcentaje(){
     var porcentninos = (ninos*100)/totalninos
     var porcentninas = (ninas*100)/totalninos
 
-    document.getElementById("porcentninos").innerHTML="Porcentaje de niños: " + porcentninos + "%";
-    document.getElementById("porcentninas").innerHTML="Porcentaje de niñas: " + porcentninas + "%";
+    document.getElementById("porcentninos").innerHTML="Porcentaje de niños: " + porcentninos.toFixed(2) + "%";
+    document.getElementById("porcentninas").innerHTML="Porcentaje de niñas: " + porcentninas.toFixed(2) + "%";
 }

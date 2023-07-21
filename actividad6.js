@@ -11,29 +11,31 @@
 // }
 
 
-// Actividad6: Correction de Manuel
+
+//Actividad6
+
 // for(var i=0;i<3; i++){
 //     var contraseña = prompt("Introduce la contraseña");
 
 //     if(contraseña=="123456"){
 //         document.write("Es correcto");
 //         break;
+//     }else {
+//         alert("Vuelve a intentarlo");
 //     }
 // }
-// document.write("No es correcto");
 
 function identificar(){
     for(var i=0;i<3; i++){
-        var contraseña = (document.getElementById("identif").value);
+        var contrasena = prompt("Introduce la contraseña de 6 cifras");
+        // var contrasena =(document.getElementById("identif").value);
     
-        if(contraseña=="123456"){
-            identificado = "Es correcto"
-            document.getElementById("identificado").innerHTML="identificado: " + identificado;
-            
+        if(contrasena == "123456"){
+            document.getElementById("identifica").innerHTML="Es correcto";
             break;
+        }else {
+            document.getElementById("identifica").innerHTML="No pueda intentar más";
         }
     }
-    identificado = "No es correcto"
-    document.getElementById("identificado").innerHTML="identificado: " + identificado;
 }
 
