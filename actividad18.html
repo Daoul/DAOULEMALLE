@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad18 JavaScript</title>
+</head>
+<body>
+    <form action="">
+        <label for="codigo">Tu Código</label>
+        <input type="text" id="codigo" name="codigo">
+
+        <label for="nbre_apelli">Tu Nombre y Apellido</label>
+        <input type="text" id="nbre_apelli" name="nbre_apelli">
+
+        <label for="edad">Tu Edad</label>
+        <input type="number" id="edad" name="edad">
+
+        <label for="correo">Tu Correo electronico</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="telefono">Tu Telefono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="temas">Selecciona un tema</label>
+        <select name="temas" id="temas">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+
+        <input type="button" value="rellenar" onclick="rellenardatos()">
+    </form>
+    <div id="alumno"></div>
+
+    <script src="actividad18.js"></script>
+    
+    
+</body>
+</html>
