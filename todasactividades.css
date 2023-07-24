@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+#calcula{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    gap: .2em;
+}
+
+#calcula input{
+    width: 25em;
+    height: 3em;
+    border-radius: 1.2em;
+    font-size: 1em;
+    text-align: center;
+}
