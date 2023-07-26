@@ -21,6 +21,7 @@
 // document.write("Dividir: " + (a/b) + "<br/>");
 
 function calcular(){
+    // var num3 = prompt("Numero 3");
 
     var num1 = Number(document.getElementById("numero1").value);
     var num2 = Number(document.getElementById("numero2").value);
@@ -32,5 +33,20 @@ function calcular(){
     document.getElementById("restar").innerHTML="Restar: " + restar;
     document.getElementById("multiplicar").innerHTML="multiplicar: " + multiplicar;
     document.getElementById("dividir").innerHTML="dividir: " + dividir;
+
+    // innerHTML=`<h2>Sección de la actividad2 </h2>
+    // <label for="numero1">Introduce el primer número</label>
+    // <input type="number" id="numero1" name="numero1">
+
+    // <label for="numero2">Introduce el segundo número</label>
+    // <input type="number" id="numero2" name="numero2">
+    
+    // <button onclick="calcular()">Calcular</button>
+    // <br>
+    // <h3 id="sumar"><br>Sumar:</h3>
+    // <h3 id="restar"><br>Restar:</h3>
+    // <h3 id="multiplicar"><br>Multiplicar:</h3>
+    // <h3 id="dividir"><br>Dividir:</h3>
+    // <br>`
     
 }

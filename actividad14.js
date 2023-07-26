@@ -1,3 +1,4 @@
+function losdiasemana(){
 var diasSemana;
 console.log(diasSemana);
 diasSemana = new Array(7);
@@ -19,3 +20,4 @@ for (let i=0; i<diasSemana.length; i++){
 // document.write("</br>" + diasSemana[6]);
 
 console.log(diasSemana);
+}
