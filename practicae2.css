@@ -14,8 +14,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .3em;
-    margin: 3em;
+    gap: 1em;
+    margin: 2em;
 }
 .todas{
     display: flex;
@@ -24,11 +24,11 @@ body{
     justify-content: center;
     align-items: center;
     padding: 2em;
-    gap: .3em;
+    gap: .6em;
 }
 
 .todas button{
-    width: 25em;
+    width: 20em;
     height: 3em;
     border-radius: 1.2em;
     font-size: 1em;
