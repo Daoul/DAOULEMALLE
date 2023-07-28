@@ -42,7 +42,7 @@ function porcentaje(ninos, ninas){
     var porcentninos = (ninos*100)/totalninos
     var porcentninas = (ninas*100)/totalninos
     
-    console.log(" El porcentaje de de niños: " + porcentninos)
-    console.log(" El porcentaje de de niñss: " + porcentninas)
+    console.log(" El porcentaje de de niños: " + porcentninos.toFixed(2) + "%")
+    console.log(" El porcentaje de de niñss: " + porcentninas.toFixed(2) + "%")
 }
 porcentaje();
