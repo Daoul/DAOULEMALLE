@@ -28,7 +28,7 @@ window.addEventListener('load', () =>{
             document.querySelector("#error_apellidos").style.color = "green";
         }
 
-        if(edad.trim() == null || edad.trim() == ""){
+        if(edad == null || edad <= 0 || isNaN(edad)){
             document.querySelector("#error_edad").innerHTML = "Edad no valido";
             document.querySelector("#error_edad").style.color = "red";
             return false
