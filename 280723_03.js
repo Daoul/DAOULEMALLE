@@ -51,7 +51,7 @@ var alumnojs = JSON.parse(localStorage.getItem("alumno"));
 
 document.querySelector("#totalalumnos").append(alumnojs.nombre + "-----"+alumnojs.correo+ "-----"+alumnojs.telefono);
 
-// Borrar una palabra clave 
+// Borrar un elemento con su palabra clave
 localStorage.removeItem("Listado"); 
 
 // Lumpia el localstorage
