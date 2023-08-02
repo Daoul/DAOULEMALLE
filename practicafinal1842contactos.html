@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica final UF1842</title>
+    <link rel="stylesheet" href="practicafinal1842.css">
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img width="200" height="200" src="medias/logo.jpg" alt="logo">
         <nav>
-            <a href="">INICIO</a>
-            <a href="">CURSO</a>
-            <a href="">CONTACTO</a>
+            <button>INICIO</button>
+            <button>CURSO</button>
+            <button>CONTACTO</button>
+            
         </nav>
     </header>
 
-    <div>
-        <h3>Nombre Usuario</h3>
-        <p>Rol</p>
-    </div>
+    <div class="principal">
 
-    <div>
-       <img src="" alt="">
-       <h4></h4>
-       <p></p>
-       <button></button>
-    </div>
+        <div class="contenedor1">
+            <div class="aceder">
+                <h3>Nombre Usuario</h3>
+                <p>Rol </p>
+            </div>
 
-    <div>
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre">
+            <hr>
 
-            <label for=">correo">Correo Electrónico</label>
-            <input type="email" id="correo" name="correo">
+            <div class="inscrib">
+                <img width="500" height="300" src="medias/imagen-curso.jpg" alt="">
+                <h4>Inscribete</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <button>INFORMACIÓN</button>
+            </div>
+        </div>
 
-            <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" name="asunto">
+        <div class="contenedor2">
+                <form class="formulario" action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+        
+                    <label for=">correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo">
+        
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto">
+        
+                    <label for="">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10">Tu mensaje aquí</textarea>
+        
+                    <!-- <input type="submit" id="boton"> -->
 
-            <label for="">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10">Tu mensaje aquí</textarea>
+                    <button id="boton">ENVIAR</button>
+        
+                    
+                </form>
+            
 
-            <button>ENVIAR</button>
-        </form>
-    </div>
-    <div>
-        <p>Texto Legal</p>
+            
+
+            <div class="legal">
+                <p>Texto Legal</p>
+            </div>
+        </div>
+
     </div>
 
     <footer>
         <p>&copy; Todo los derechos reservados</p>
     </footer>
+    
+    <script src="practicafinal1842.js"></script>
     
 </body>
 </html>

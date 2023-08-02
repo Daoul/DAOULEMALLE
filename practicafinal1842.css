@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: .1em solid black;
+}
+
+:root{
+    --curso-img: url('medias/avatar1.jpg'), url('medias/avatar2.jpg'), url('medias/avatar3.jpg'), url('medias/avatar4.jpg') , url('medias/avatar5.jpg');
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+}
+
+header img {
+    border-radius: 50%;
+    box-shadow: 2px 3px black;
+
+}
+button{
+    background-color: rgb(10, 124, 211);
+    border-radius: .8em;
+    width: 10em;
+    height: 3em;
+    color: white    ;
+    
+}
+
+.principal{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.contenedor1{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border: .1em solid black;
+}
+
+.contenedor2{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("medias/imagen-fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+    border: .1em solid black;
+    gap: 1em;
+}
+
+.aceder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    gap: 1em;
+    
+}
+
+.inscrib{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1em;
+    
+}
+
+.inscrib img{
+    border-radius: 5%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    margin-bottom: 3em;
+
+}
+
+/* .legal{
+    margin-top: 5em;
+} */
+
+input{
+    width: 25em;
+    height: 3em;
+    border-radius: .8em;
+    
+}
+textarea{
+    width: 25em;
+    border-radius: .8em;
+}
+
+.colors div{
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 30%;
+    background: transparent;
+    margin: 6px 0;
+    cursor: pointer;
+    
+}
+
+.colors div:nth-child(1){
+    background: #ea25b5;
+}
+
+.colors div:nth-child(2){
+    background: #04bbec;
+}
+
+.colors div:nth-child(3){
+    background: #ff82f4;
+}
+
+.colors div:nth-child(4){
+    background: #0d3f7c;
+}
+
+.colors div:nth-child(5){
+    background: #cdeae8;
+}
