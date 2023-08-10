@@ -129,5 +129,6 @@ $(document).ready(function(){
     .css("background-color", "rgb(115, 151, 236);")
     .css("color", "white")
     .css("font-size", "1em");
+    
 
 });
