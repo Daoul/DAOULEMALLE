@@ -128,10 +128,11 @@ document.getElementById("botonAñadir").addEventListener("click", function (even
         mensaje.classList.add('realizado')
         setTimeout(() => {
             mensaje.classList.remove('repetidoError')
-            window.location.reload()
+            // window.location.reload()
         }, 1500)
     }
     guardarAlmacenamientoLocal('usuarios', usuarios);
+    alert("Enviado")
 })
 
 
