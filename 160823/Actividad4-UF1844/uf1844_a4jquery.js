@@ -17,6 +17,8 @@ $('#acordeon').css("background", "black")
 .css("border", ".2em solid white") ;
 $('#mostrar').css("background", "black")
 .css("border", ".2em solid white") ;
+$('.acordione').css("background", "black")
+.css("border", ".2em solid white") ;
 $('footer').css("background", "black");
 
 });
