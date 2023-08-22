@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+
+#profesores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ea25b5;
+    gap: 1em;
+    padding: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: white;
+
+    
+}
