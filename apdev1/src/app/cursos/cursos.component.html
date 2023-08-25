@@ -1,28 +1,14 @@
-<div id="cursos">
-<h2>{{ListadoCurso}}</h2>
-
-<ul>
-    <li>{{Curso1}}</li>
-    <li>{{Curso2}}</li>
-    <li>{{Curso3}}</li>
-</ul>
-<button (click)="cambiarTitulo()">Cambiar Titulo</button>
-</div>
-
-
-
-
-
-<!-- <p>Prosesor Asignado</p>
-<h2>{{nombreProfesor}}</h2>
-<img src="{{fotoProfesor}}" alt="Foto del profesor">
-
-<p>{{alumnoall}}</p>
-<ul>
-    <li *ngfor="let listado of alumnoall">
-        {{listado.nombreA}}
+<ul id="cursos">
+    <h2>Listado Curso</h2>
+    <li *ngFor="let listado of cursosAll">
+        {{listado.nombreC}} - {{listado.infoC}} <span *ngIf="listado.estadoC != false">CREADO</span>
     </li>
-</ul> -->
+    
+</ul>
+
+<p>Añadir Nota</p>
+<input type="number" [(ngModel)]="Nota">
+<p>{{Nota}}</p>
 
 
 

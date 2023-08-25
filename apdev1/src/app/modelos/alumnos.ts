@@ -1,10 +1,3 @@
-export var profesorBase ={
-    nombre: "Manuel",
-    apellidos: "M.P.",
-    correo: "manuelmacpe@gmail.com",
-    foto: "./assets/media/fotommp.jpg"
-}
-
 export class alumnosBD{
 
     constructor(

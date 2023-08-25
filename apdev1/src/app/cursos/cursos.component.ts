@@ -1,28 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { cursosBD } from '../modelos/cursos';
 
 @Component({
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
   styleUrls: ['./cursos.component.css']
 })
-export class CursosComponent {
-
-  public ListadoCurso: string
-  public Curso1: string
-  public Curso2: string
-  public Curso3: string
+export class CursosComponent implements OnInit{
+  public cursosAll:Array<cursosBD>
+  public Nota:number
 
   constructor(){
-    this.ListadoCurso = "Listado de Cursos"
-    this.Curso1 = "Desallorador Web"
-    this.Curso2 = "Applicación Web"
-    this.Curso3 = "Securidad Informatico"
+    this.cursosAll = [
+      new cursosBD("Desallorador Web", "Aprender a cear Paginás Web ", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit cupiditate non, fugit officia, quam doloribus asperiores nesciunt, esse amet nobis rem explicabo doloremque repellat? Odit nesciunt repudiandae odio ipsum ratione.", true ),
+      new cursosBD("Applicación Web", "Desallorador Applicación Web ", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit cupiditate non, fugit officia, quam doloribus asperiores nesciunt, esse amet nobis rem explicabo doloremque repellat? Odit nesciunt repudiandae odio ipsum ratione.", true ),
+      new cursosBD("Securidad Informatico", "Aprender la securidad entorno Infirmatica ", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit cupiditate non, fugit officia, quam doloribus asperiores nesciunt, esse amet nobis rem explicabo doloremque repellat? Odit nesciunt repudiandae odio ipsum ratione.", false )
+    ]
+    this.Nota = 0
   }
-  ngOnInt(){
-    console.log("OnInit Ejecutable")
+
+  ngOnInit(): void {
+    console.log(this.cursosAll)
   }
-  cambiarTitulo(){
-    this.ListadoCurso = "Curco de"
-  }
+
 
 }

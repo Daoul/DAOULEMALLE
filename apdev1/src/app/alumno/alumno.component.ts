@@ -1,27 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { alumnoBD } from '../modelos/alumno';
+
 
 @Component({
   selector: 'app-alumno',
   templateUrl: './alumno.component.html',
   styleUrls: ['./alumno.component.css']
 })
-export class AlumnoComponent {
+export class AlumnoComponent implements OnInit{
+public alumnoAll: Array<alumnoBD>
 
-  public DatosAlumno: string
-  public NombreAlumno: string
-  public ApellidoAlumno: string
-  public CorreoAlumno: string 
-  public CursoAlumno: string 
-  public NivelAlumno: number 
-  
-  constructor(){
-    this.DatosAlumno = "Datos del Alumno"
-    this.NombreAlumno = "Ana Maria "
-    this.ApellidoAlumno = "Lopez"
-    this.CorreoAlumno = "anamlopez@gmail.com"
-    this.CursoAlumno = "Desallorador Web"
-    this.NivelAlumno = 3
+
+constructor(){
+
+  this.alumnoAll = [
+    new alumnoBD("Javier", "Díaz", 19, "javier@gmail.com", "123456789", "./assets/medias/avatar1.jpg", true)
+  ]
+}
+ 
+
+ngOnInit(): void {
+  console.log(this.alumnoAll)
+}
     
   }
 
-}
+

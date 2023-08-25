@@ -1,11 +1,8 @@
-<div id="alumnos">
-    <h2>{{ListadoAlumnos}}</h2>
-        
-    <ul>
-        <li>{{Alumno1}}</li>
-        <li>{{Alumno2}}</li>
-        <li>{{Alumno3}}</li>
-    </ul>
-        
-    </div>
+<ul id="alumnos">
+    <h2>Listado Alumno</h2>
+    <li *ngFor="let listado of alumnosAll">
+        {{listado.nombreA}} - {{listado.apellidoA}} - <img width="100px" src="{{listado.fotoA}}" alt="Fotoalumnos"> <span *ngIf="listado.estadoA != false">MATRICULADO</span>
+    </li>
+    
+</ul>
     

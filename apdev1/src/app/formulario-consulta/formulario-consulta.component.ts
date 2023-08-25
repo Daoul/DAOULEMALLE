@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario-consulta.component.css']
 })
 export class FormularioConsultaComponent {
+  public nombre1: string
+  public correo1: string
+  public enviar1: boolean
+
+  constructor(){
+    this.nombre1 ="Daoule"
+    this.correo1 = "daoule@gmail.com"
+    this.enviar1 = false
+
+  }
+ siCorrecto(){
+  this.enviar1 = true
+ }
+ noCorrecto(){
+  this.enviar1 = false
+ }
 
 }

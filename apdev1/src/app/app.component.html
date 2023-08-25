@@ -1,3 +1,36 @@
+<div>
+  <ul>
+    <li><a routerLink="">Inicio</a></li>
+    <li><a routerLink="/cursos">Cursos</a></li>
+    <li><a routerLink="/curso">Curso</a></li>
+    <li><a routerLink="/alumnos">Alumnos</a></li>
+    <li><a routerLink="/alumno">Alumno</a></li>
+    <li><a routerLink="/profesores">Profesores</a></li>
+    <li><a routerLink="/profesore">Profesor</a></li>
+    <li><a routerLink="/acceso">Acseso</a></li>
+    <li><a routerLink="/registro">Registro</a></li>
+    <li><a routerLink="/consulta">Consulta</a></li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
+<ng-template>
+<app-cursos></app-cursos>
+<app-curso></app-curso>
+<app-alumnos></app-alumnos>
+<app-alumno></app-alumno>
+<app-profesores></app-profesores>
+<app-profesore></app-profesore>
+<app-formulario-acceso></app-formulario-acceso>
+<app-formulario-consulta></app-formulario-consulta>
+<app-formulario-registro></app-formulario-registro>
+</ng-template>
+
+
+
+
+
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -452,7 +485,7 @@
     </a>
   </div> -->
 
-  <app-cursos></app-cursos>
+  <!-- <app-cursos></app-cursos>
   <app-curso></app-curso>
   <app-alumnos></app-alumnos>
   <app-alumno></app-alumno>
@@ -460,7 +493,7 @@
   <app-profesore></app-profesore>
   <app-formulario-acceso></app-formulario-acceso>
   <app-formulario-consulta></app-formulario-consulta>
-  <app-formulario-registro></app-formulario-registro>
+  <app-formulario-registro></app-formulario-registro> -->
 
   <!-- Footer -->
   <!-- <footer>
@@ -491,4 +524,4 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+

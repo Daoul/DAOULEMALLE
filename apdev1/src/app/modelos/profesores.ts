@@ -7,6 +7,6 @@ export class profesoresBD{
         public telefonoP: String,
         public fotoP: String,
         public estadoP: boolean,
-        public cursosP: String,
+      
     ){}
 }

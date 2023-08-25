@@ -1,24 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { cursoBD } from '../modelos/curso';
 
 @Component({
   selector: 'app-curso',
   templateUrl: './curso.component.html',
   styleUrls: ['./curso.component.css']
 })
-export class CursoComponent {
-  public DatosCurso: string
-  public nombreCurso: string
-  public infoCurso: string
-  public contenidoCurso: string
-  public estadoCurso: boolean
+export class CursoComponent implements OnInit{
+  public cursoAll:Array<cursoBD>
 
   constructor(){
-    this.DatosCurso = "Datos del Curso"
-    this.nombreCurso = "Desallorador Web"
-    this.infoCurso = "Aprender a cear Paginás Web "
-    this.contenidoCurso = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit cupiditate non, fugit officia, quam doloribus asperiores nesciunt, esse amet nobis rem explicabo doloremque repellat? Odit nesciunt repudiandae odio ipsum ratione."
-    this.estadoCurso = true
+    this.cursoAll = [
+      new cursoBD("Desallorador Web", "Aprender a cear Paginás Web ", "./assets/medias/VideoClase.mp4", true  )
+    ]
   }
 
-
+  ngOnInit(): void {
+    console.log(this.cursoAll)
+  }
+  
 }

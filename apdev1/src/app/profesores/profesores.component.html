@@ -1,10 +1,7 @@
-<div id="profesores">
-    <h2>{{ListadoProfes}}</h2>
-        
-    <ul>
-        <li>{{profe1}}</li>
-        <li>{{profe2}}</li>
-        <li>{{profe3}}</li>
-    </ul>
-        
-    </div>
+<ul id="profesores">
+    <h2>Listado Profesores</h2>
+    <li *ngFor="let listado of profesoresAll">
+        {{listado.nombreP}} - {{listado.apellidoP}} <span *ngIf="listado.estadoP != false">CREADO</span>
+    </li>
+    
+</ul>

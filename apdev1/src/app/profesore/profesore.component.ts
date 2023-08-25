@@ -1,26 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { profesorBD } from '../modelos/profesor';
+
 
 @Component({
   selector: 'app-profesore',
   templateUrl: './profesore.component.html',
   styleUrls: ['./profesore.component.css']
 })
-export class ProfesoreComponent {
-  public DatosProfesor: string
-  public NombreProfesor: string
-  public ApellidoProfesor: string
-  public CorreoProfesor: string 
-  public imagenProfesor: string 
-  
-  
+export class ProfesoreComponent implements OnInit{
+  public profesorDat: Array<profesorBD>
+
   constructor(){
-    this.DatosProfesor = "Datos del Profesor"
-    this.NombreProfesor = "Manuel "
-    this.ApellidoProfesor = "Hernandez"
-    this.CorreoProfesor = "manuelhernandez@gmail.com"
-    this.imagenProfesor = ""
-    
-    
+    this.profesorDat = [
+new profesorBD("Miguel", "Ramírez", "miguel@gmail.com", "123456789", "./assets/medias/avatar5.jpg", true),
+    ]
   }
 
-}
+  ngOnInit(): void {
+    console.log(this.profesorDat)
+  }
+  }
+

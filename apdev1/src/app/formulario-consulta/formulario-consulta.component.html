@@ -3,15 +3,25 @@
     <h2>Formulario de Consultat</h2>
 
     <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre"><br> <br>
+    <input [(ngModel)]="nombre1"type="text" id="nombre" name="nombre"><br> <br>
 
-    <label for=">correo">Correo Electrónico</label>
-    <input type="email" id="correo" name="correo"><br> <br>
+    <label for="correo">Correo Electrónico</label>
+    <input [(ngModel)]="correo1" type="email" id="correo" name="correo"><br> <br>
 
     <label for="">Mensaje</label>
     <textarea name="mensaje" id="mensajes" cols="30" rows="10">Tu mensaje aquí</textarea><br> <br>
 
-    <input id="botonAñadir" type="submit" value="Enviar">
+    <button (click)="siCorrecto()">Enviar</button>
+    <!-- <input id="botonAñadir" type="submit" value="Enviar"> -->
    
-           
 </form>
+
+<div *ngIf="enviar1; then sicorrecto else nocorrecto"></div>
+    
+    <ng-template #sicorrecto>
+        <h2>{{nombre1}}</h2>
+        <h2>Nombre Correcto</h2>
+    </ng-template>
+    <ng-template #nocorrecto>
+        <h2>Identificate</h2>
+    </ng-template>
