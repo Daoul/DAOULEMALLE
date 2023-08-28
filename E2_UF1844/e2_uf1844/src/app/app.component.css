@@ -7,6 +7,26 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+li{
+  list-style: none;
+}
+
+#menu{
+ display: flex;
+ gap: 2em;
+ font-size: 1.5em;
+}
+
+a{
+  background-color: #a7f05f;
+  /* border-radius: 2.5em; */
+  
+}
+a:hover{
+  background-color: #e384dc;
+}
+
+
   h1,
   h2,
   h3,

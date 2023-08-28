@@ -7,20 +7,21 @@
   />
   <span>Bienvenido</span>
     <div class="spacer"></div>
+    <div >
+      <ul id="menu">
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/acceso">Acceso</a></li>
+        <li><a routerLink="/registro">Registro</a></li>
+        <li><a routerLink="/pedido">Pedido</a></li>
+        <li><a routerLink="/carrito">Carrito</a></li>
+      </ul>
+    </div>
     
 </div>
 
 <div class="content" role="main">
   
-<div>
-  <ul>
-    <li><a routerLink="/">Inicio</a></li>
-    <li><a routerLink="/acceso">Acceso</a></li>
-    <li><a routerLink="/registro">Registro</a></li>
-    <li><a routerLink="/pedido">Pedido</a></li>
-    <li><a routerLink="/carrito">Carrito</a></li>
-  </ul>
-</div>
+
 
 <router-outlet></router-outlet>
 <ng-template>
