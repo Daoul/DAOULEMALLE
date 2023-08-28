@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:'profesore', component: ProfesoreComponent},
   {path:'acceso', component: FormularioAccesoComponent},
   {path:'registro', component: FormularioRegistroComponent},
-  {path:'consulta', component: FormularioConsultaComponent},
+  {path:'consulta', component: FormularioConsultaComponent}
 ];
 
 @NgModule({
