@@ -1,0 +1,57 @@
+
+li{
+    list-style: none;
+  }
+  
+  #menu{
+   display: flex;
+   gap: 2em;
+   font-size: 1.5em;
+   padding-right: 1em;
+  }
+  
+  a{
+    background-color: #d1e8f6;
+    text-decoration: none;
+    
+    
+  }
+  a:hover{
+    background-color: #e384dc;
+  }
+
+  
+  .toolbar {
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+   
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }

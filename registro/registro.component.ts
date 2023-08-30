@@ -1,23 +1,12 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-formulario-registro',
-//   templateUrl: './formulario-registro.component.html',
-//   styleUrls: ['./formulario-registro.component.css']
-// })
-// export class FormularioRegistroComponent {
-
-// }
-
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-formulario-registro',
-  templateUrl: './formulario-registro.component.html',
-  styleUrls: ['./formulario-registro.component.css']
+  selector: 'app-registro',
+  templateUrl: './registro.component.html',
+  styleUrls: ['./registro.component.css']
 })
-export class FormularioRegistroComponent implements OnInit{
+export class RegistroComponent implements OnInit{
 
   contacto!: FormGroup;
 	submitted = false;

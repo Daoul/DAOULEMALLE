@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { profesoresBD } from '../modelos/profesores'
+import { profesoresBD } from '../modelos/profesores';
 
 
 

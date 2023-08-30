@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // importar componentes
-import { AppComponent } from './app.component';
+// import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursoComponent } from './curso/curso.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
@@ -14,7 +14,7 @@ import { FormularioRegistroComponent } from './formulario-registro/formulario-re
 import { FormularioConsultaComponent } from './formulario-consulta/formulario-consulta.component';
 
 const routes: Routes = [
-  {path:'', component:AppComponent},
+  // {path:'', component:AppComponent},
   {path:'cursos', component: CursosComponent},
   {path:'curso', component: CursoComponent},
   {path:'alumnos', component: AlumnosComponent},

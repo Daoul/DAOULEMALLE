@@ -1,7 +1,7 @@
 <ul id="profesores">
     <h2>Listado Profesores</h2>
     <li *ngFor="let listado of profesoresAll">
-        {{listado.nombreP}} - {{listado.apellidoP}} <span *ngIf="listado.estadoP != false">CREADO</span>
+        {{listado.nombreP}} - {{listado.apellidoP}} - <img width="100px" src="{{listado.fotoP}}" alt="Fotoprofesores">  <span *ngIf="listado.estadoP != false">CREADO</span>
     </li>
     
 </ul>
