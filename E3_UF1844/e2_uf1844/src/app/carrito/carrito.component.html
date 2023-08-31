@@ -1,0 +1,7 @@
+<ul id="carrito">
+    <h2>Listado de Productos en el Carrito</h2>
+    <li *ngFor="let listado of productosAll">
+        {{listado.nombreP}} - <img width="100px" src="{{listado.fotoP}}" alt="Fotoaproductos"> - {{listado.precioP | currency: 'EUR' }}
+    </li>
+    
+</ul>

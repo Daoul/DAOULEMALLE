@@ -20,7 +20,7 @@
 
 <form class="formulario" [formGroup]="contacto" (ngSubmit)="onSubmit()">
     <div class="mb-3">
-      <label>Nombres y Apellidos</label>
+      <label>Nombres y <br> Apellidos</label>
       <input type="text" formControlName="nya" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['nya'].errors}">
       <div *ngIf="submitted && f['nya'].errors?.['required']" class="invalid-feedback">
         <div *ngIf="f['nya'].errors?.['required']">Por favor, ingresa tus Nombre y Apellidos</div>
