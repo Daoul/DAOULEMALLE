@@ -12,6 +12,7 @@ import { ProfesoreComponent } from './profesore/profesore.component';
 import { FormularioAccesoComponent } from './formulario-acceso/formulario-acceso.component';
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { FormularioConsultaComponent } from './formulario-consulta/formulario-consulta.component';
+import { CrearcursoComponent } from './crearcurso/crearcurso.component';
 
 const routes: Routes = [
   // {path:'', component:AppComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:'profesore', component: ProfesoreComponent},
   {path:'acceso', component: FormularioAccesoComponent},
   {path:'registro', component: FormularioRegistroComponent},
-  {path:'consulta', component: FormularioConsultaComponent}
+  {path:'consulta', component: FormularioConsultaComponent},
+  {path:'crear_curso', component: CrearcursoComponent}
 ];
 
 @NgModule({

@@ -1,13 +1,13 @@
 const express = require('express')
-
-const controller = require('../controllers/user')
-
+const UserController = require('../controllers/user')
 const router = express.Router()
 
-const path = 'user'
+router.get('/home', UserController.home);
+router.get('/test', UserController.test);
+router.get('/save-user', UserController.saveUser);
+router.get('/user/:id?', UserController.getUser);
+router.get('/users', UserController.getUsers);
+router.put('/user/:id', UserController.updateUser);
+router.delete('/user/:id', UserController.deleteUser);
 
-router.get(
-    '/$(path)',
-    controller.getData
-)
 module.exports = router

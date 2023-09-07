@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,7 @@ import { FormularioRegistroComponent } from './formulario-registro/formulario-re
 import { FormularioConsultaComponent } from './formulario-consulta/formulario-consulta.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CrearcursoComponent } from './crearcurso/crearcurso.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { FooterComponent } from './footer/footer.component';
     FormularioRegistroComponent,
     FormularioConsultaComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CrearcursoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
 
   ],
