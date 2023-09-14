@@ -18,7 +18,7 @@ export class save_cursoService{
     }
     saveCurso(curso: cursoBD): Observable<any>{
         let parms = JSON.stringify(curso);
-        let headers = new HttpHeaders().set('Content-type', 'application/json');
+        let headers = new HttpHeaders().set('Content-type','application/json');
         return this._http.post(this.url+'save-curso', parms,{headers: headers});    
 
     } 
