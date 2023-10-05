@@ -1,8 +1,0 @@
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.galeria img{
-    width: 200px
-}

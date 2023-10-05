@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+// import { ToastrService } from 'ngx-toastr';
 import { GcursoService } from '../../config/Servicios/gcurso.service';
 import { GCurso } from '../../config/Modelos/gcurso';
 
@@ -8,7 +9,7 @@ import { GCurso } from '../../config/Modelos/gcurso';
   templateUrl: './listar-cursos.component.html',
   styleUrls: ['./listar-cursos.component.css']
 })
-export class ListarCursosComponent {
+export class ListarCursosComponent implements OnInit{
   listCursos: GCurso[] = []
   
 

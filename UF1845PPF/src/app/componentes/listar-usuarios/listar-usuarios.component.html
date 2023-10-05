@@ -1,0 +1,43 @@
+<div class="container mt5">
+    <div class="row">
+        <div class="w80">
+            <div class="card">
+                <div class="card-body">
+                    <span class="titulo">LISTADO DE USUARIOS</span>
+                    <button class="btn btn-success float-end" routerLink="/crear-usuario">NUEVO</button>
+                    <table *ngIf="listUsuarios.length > 0" class="table">
+                        <thead>
+                          <tr>
+                            
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Fnacimiento</th>
+                            <th scope="col">Correo electroníco</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">pass</th>
+                            <th scope="col">Tipo</th>
+                            <!-- <th scope="col">Editar</th> -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let usuario of listUsuarios">
+                            <th scope="row">{{usuario.nombre}}</th>
+                            <td>{{usuario.apellidos}}</td>
+                            <td>{{usuario.Fnacimiento}} </td>
+                            <td>{{usuario.email}}</td>
+                            <td>{{usuario.telefono}}</td>
+                            <td>{{usuario.foto}}</td>
+                            <td>{{usuario.pass}}</td>
+                            <td>{{usuario.tipo}}</td>
+                            <td><i [routerLink]="['/editarUsuario', usuario._id]"class="fa-solid fa-pen-to-square text-primary"></i></td>
+                            <td><i (click)="eliminarUsuario(usuario._id)"class="fa-solid fa-trash text-danger"></i></td>
+                            <td> <i [routerLink]="['/verUsuario', usuario._id]" class="fa-solid fa-eye text-secondary"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

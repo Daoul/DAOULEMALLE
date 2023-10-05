@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ToastrModule } from 'ngx-toastr'
+import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,10 @@ import { ListarCursosComponent } from './componentes/listar-cursos/listar-cursos
 import { CrearCursosComponent } from './componentes/crear-cursos/crear-cursos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { CursoComponent } from './componentes/curso/curso.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { ListarUsuariosComponent } from './componentes/listar-usuarios/listar-usuarios.component';
+import { CrearUsuariosComponent } from './componentes/crear-usuarios/crear-usuarios.component';
+import { UsuarioComponent } from './componentes/usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,10 @@ import { CursoComponent } from './componentes/curso/curso.component';
     CrearCursosComponent,
     HomeComponent,
     ContactoComponent,
-    CursoComponent
+    CursoComponent,
+    ListarUsuariosComponent,
+    CrearUsuariosComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
