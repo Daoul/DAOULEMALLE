@@ -1,11 +1,12 @@
 import { Router } from "express";
 import {   getMensajes, getMensaje, deleteMensaje, postMensaje, updateMensaje } from "../controllers/mensajeController";
+import validateToken from '../services/validate-token';
 
-const routermensaje = Router();
-routermensaje.get('/mensajes/', getMensajes);
-routermensaje.get('/mensajes/:id', getMensaje);
-routermensaje.delete('/mensajes/:id', deleteMensaje);
-routermensaje.post('/mensajes/', postMensaje);
-routermensaje.put('/mensajes/:id', updateMensaje);
+const router = Router();
+router.get('/', validateToken, getMensajes);
+router.get('/:id', validateToken, getMensaje);
+router.delete('/:id', validateToken, deleteMensaje);
+router.post('/', validateToken, postMensaje);
+router.put('/:id', validateToken, updateMensaje);
 
-export default routermensaje;
+export default router;

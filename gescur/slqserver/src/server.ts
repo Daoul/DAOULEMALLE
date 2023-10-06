@@ -5,6 +5,12 @@ import routesCurso from './routes/CursoRoutes'
 import { User } from './models/UserModel';
 import Curso from './models/CursoModel'
 import sequelize from './db/connection';
+import routesUsuario from './routes/usuarioroutes';
+import routerMensaje from './routes/mensajeroutes';
+import routesTarea from './routes/tareaRoutes';
+import Mensaje from './models/mensajeModel';
+import Tarea from './models/tareaModel';
+
 
 class Server {
     private app: Application;
@@ -30,6 +36,9 @@ class Server {
        
         this.app.use('/api/users', routesUser);
         this.app.use('/api/cursos', routesCurso);
+        this.app.use('/api/usuarios', routesUsuario);
+        this.app.use('/api/mensajes', routerMensaje);
+        this.app.use('/api/tareas', routesTarea);
     }
 
     middlewares() {
@@ -44,6 +53,9 @@ class Server {
             sequelize.authenticate()
             await User.sync()
             await Curso.sync()
+            await User.sync()
+            await Mensaje.sync()
+            await Tarea.sync()
         } catch (error) {
             console.error('No se puede conectar con la Base de Datos:', error);
         }

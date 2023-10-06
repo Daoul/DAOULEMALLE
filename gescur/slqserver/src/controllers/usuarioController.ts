@@ -1,14 +1,14 @@
 import {Request, Response} from 'express';
-import Usuario from '../models/UsuarioModel';
+import { User } from '../models/UserModel';
 
 export const getUsuarios = async (req: Request, res: Response) => {
-    const listUsuarios = await Usuario.findAll();
+    const listUsuarios = await User.findAll();
     res.json(listUsuarios);
 }
 
 export const getUsuario= async (req: Request, res: Response) => {
     const { id } = req.params;
-    const usuario = await Usuario.findByPk(id);
+    const usuario = await User.findByPk(id);
 
     if (usuario) {
         res.json(usuario)
@@ -21,13 +21,13 @@ export const getUsuario= async (req: Request, res: Response) => {
 
 export const deleteUsuario = async (req: Request, res: Response) => {
     const { id } = req.params;
-    const usuario = await Usuario.findByPk(id);
+    const usuario = await User.findByPk(id);
     if (!usuario) {
         res.status(404).json({
             msg: `No existe un usuario con el id ${id}`
         })
     }else{
-        await Usuario.destroy();
+        await User.destroy();
         res.json({
             msg: 'El usuario fue eliminado con exito'
         })
@@ -36,7 +36,7 @@ export const deleteUsuario = async (req: Request, res: Response) => {
 export const postUsuario =  async (req: Request, res: Response) => {
     const {body} = req;
     try{
-        await Usuario.create(body);
+        await User.create(body);
         res.json({
             msg: '!El usuario fue agregado con exito!'
         })
@@ -52,7 +52,7 @@ export const updateUsuario =  async (req: Request, res: Response) => {
     const {body} = req;
     const {id} = req.params;
     try{
-        const usuario = await Usuario.findByPk(id);
+        const usuario = await User.findByPk(id);
         if(usuario){
             await usuario.update(body);
             res.json({
